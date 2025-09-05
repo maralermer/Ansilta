@@ -1,190 +1,1249 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TK2M644N');</script>
-<!-- End Google Tag Manager -->
-<title>Mi sitio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-<style>
-body, html {
-  height: 100%;
-  font-family: "Inconsolata", sans-serif;
-}
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tienda Ansilta - Indumentaria Técnica de Montaña</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
-.bgimg {
-  background-position: center;
-  background-size: cover;
-  background-image: url("images/coffeehouse.jpg");
-  min-height: 75%;
-}
+            body {
+                font-family: "Arial", sans-serif;
+                line-height: 1.6;
+                color: #333;
+                background-color: #f8f9fa;
+            }
 
-.menu {
-  display: none;
-}
-</style>
+            /* Container */
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 2rem;
+            }
 
-</head>
-<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK2M644N"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black">HOME</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
-    </div>
-  </div>
-</div>
+            /* Header */
+            .header {
+                background: white;
+                color: #333;
+                padding: 1rem 0;
+                position: sticky;
+                top: 0;
+                z-index: 100;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
 
-<!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">Open from 6am to 5pm</span>
-  </div>
-  <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>
-  </div>
-  <div class="w3-display-bottomright w3-center w3-padding-large">
-    <span class="w3-text-white">15 Adr street, 5015</span>
-  </div>
-</header>
+            .nav-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 2rem;
+            }
 
-<!-- Add a background color and large text to the whole page -->
-<div class="w3-sand w3-grayscale w3-large">
+            .logo {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: #333;
+            }
 
-<!-- About Container -->
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
-    <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
-    <div class="w3-panel w3-leftbar w3-light-grey">
-      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
-      <p>Chef, Coffeeist and Owner: Liam Brown</p>
-    </div>
-    <img src="images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
-    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
-    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
-  </div>
-</div>
+            .logo-icon {
+                width: 40px;
+                height: 40px;
+                background: #e74c3c;
+                margin-right: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px;
+            }
 
-<!-- Menu Container -->
-<div class="w3-container" id="menu">
-  <div class="w3-content" style="max-width:700px">
- 
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
-  
-    <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">Eat</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s6 tablink">Drink</div>
-      </a>
-    </div>
+            .logo-text {
+                font-size: 1.8rem;
+                font-weight: bold;
+                color: #333;
+            }
 
-    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Bread Basket</h5>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-    
-      <h5>Honey Almond Granola with Fruits</h5>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-    
-      <h5>Belgian Waffle</h5>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-    
-      <h5>Scrambled eggs</h5>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-    
-      <h5>Blueberry Pancakes</h5>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
-    </div>
+            .nav-menu {
+                display: flex;
+                list-style: none;
+                gap: 2rem;
+                position: relative;
+            }
 
-    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Coffee</h5>
-      <p class="w3-text-grey">Regular coffee 2.50</p><br>
-    
-      <h5>Chocolato</h5>
-      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
-    
-      <h5>Corretto</h5>
-      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
-    
-      <h5>Iced tea</h5>
-      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
-    
-      <h5>Soda</h5>
-      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
-    </div>  
-    <img src="images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
-  </div>
-</div>
+            .nav-menu li {
+                position: relative;
+            }
 
-<!-- Contact/Area Container -->
-<div class="w3-container" id="where" style="padding-bottom:32px;">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
-    <p>Find us at some address at some place.</p>
-    <img src="images/map.jpg" class="w3-image" style="width:100%">
-    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
-    <form action="respuesta.html" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
-    </form>
-  </div>
-</div>
+            .nav-menu a {
+                color: #333;
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                transition: color 0.3s;
+                display: block;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-size: 0.9rem;
+            }
 
-<!-- End page content -->
-</div>
+            .nav-menu a:hover {
+                color: #e74c3c;
+            }
 
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
+            .header-actions {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
 
-<script>
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-}
-document.getElementById("myLink").click();
-</script>
+            .header-icon {
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+                color: #666;
+            }
 
-</body>
+            .cart-badge {
+                position: relative;
+            }
+
+            .cart-badge::after {
+                content: "0";
+                position: absolute;
+                top: -8px;
+                right: -8px;
+                background: #e74c3c;
+                color: white;
+                border-radius: 50%;
+                width: 18px;
+                height: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.7rem;
+                font-weight: bold;
+            }
+
+            /* Dropdown Menu Styles */
+            .dropdown {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background: white;
+                min-width: 800px;
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+                border-radius: 0;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-10px);
+                transition: all 0.3s ease;
+                z-index: 1000;
+                padding: 2rem;
+                margin-top: 0.5rem;
+                border-top: 3px solid #e74c3c;
+            }
+
+            .nav-menu li:hover .dropdown {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+
+            .dropdown-content {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 3rem;
+            }
+
+            .dropdown-section {
+                border-right: 1px solid #ecf0f1;
+                padding-right: 2rem;
+            }
+
+            .dropdown-section:last-child {
+                border-right: none;
+                padding-right: 0;
+            }
+
+            .dropdown-section h4 {
+                color: #333;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+            }
+
+            .dropdown-section ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .dropdown-section li {
+                margin-bottom: 0.8rem;
+            }
+
+            .dropdown-section a {
+                color: #999;
+                text-decoration: none;
+                padding: 0.3rem 0;
+                font-size: 0.9rem;
+                transition: color 0.2s;
+                text-transform: none;
+                font-weight: normal;
+            }
+
+            .dropdown-section a:hover {
+                color: #e74c3c;
+                background: none;
+            }
+
+            .dropdown-image {
+                grid-column: span 3;
+                margin-top: 2rem;
+                text-align: right;
+                padding-top: 2rem;
+                border-top: 1px solid #ecf0f1;
+            }
+
+            .dropdown-image img {
+                max-width: 300px;
+                max-height: 200px;
+                border-radius: 8px;
+                object-fit: cover;
+            }
+
+            /* Hero Section */
+            .hero {
+                background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                    url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop&auto=format");
+                background-size: cover;
+                background-position: center;
+                height: 80vh;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                text-align: left;
+                color: white;
+                position: relative;
+            }
+
+            .hero-content {
+                max-width: 1200px;
+                width: 100%;
+                margin: 0 auto;
+                padding: 0 2rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .hero-left {
+                flex: 1;
+                max-width: 600px;
+            }
+
+            .hero-left h1 {
+                font-size: 4rem;
+                margin-bottom: 1rem;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                font-weight: bold;
+                line-height: 1.1;
+            }
+
+            .hero-left h2 {
+                font-size: 2.5rem;
+                margin-bottom: 1.5rem;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                font-weight: normal;
+            }
+
+            .hero-left h3 {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+                font-weight: normal;
+                opacity: 0.9;
+            }
+
+            .hero-right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                text-align: right;
+            }
+
+            .banff-logo {
+                font-size: 4rem;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+                letter-spacing: -2px;
+            }
+
+            .mountain-festival {
+                color: #e74c3c;
+                font-size: 1.8rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+            }
+
+            .hero-location {
+                font-size: 2.5rem;
+                font-weight: bold;
+                color: #333;
+                text-shadow: none;
+            }
+
+            .cta-button {
+                background-color: #e74c3c;
+                color: white;
+                padding: 1rem 2rem;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 1.1rem;
+                font-weight: bold;
+                transition: background-color 0.3s;
+                display: inline-block;
+                margin-top: 1rem;
+            }
+
+            .cta-button:hover {
+                background-color: #c0392b;
+            }
+
+            /* About Section */
+            .about-section {
+                padding: 5rem 0;
+                background-color: white;
+            }
+
+            .about-content {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 4rem;
+                align-items: center;
+            }
+
+            .about-text h2 {
+                font-size: 3rem;
+                color: #333;
+                margin-bottom: 1rem;
+                font-weight: bold;
+            }
+
+            .about-text h3 {
+                font-size: 1.5rem;
+                color: #e74c3c;
+                margin-bottom: 1.5rem;
+                font-weight: bold;
+            }
+
+            .about-text p {
+                font-size: 1.1rem;
+                line-height: 1.8;
+                color: #666;
+                margin-bottom: 1.5rem;
+            }
+
+            .about-stats {
+                display: flex;
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+
+            .stat {
+                text-align: center;
+            }
+
+            .stat-number {
+                display: block;
+                font-size: 2.5rem;
+                font-weight: bold;
+                color: #e74c3c;
+                line-height: 1;
+            }
+
+            .stat-label {
+                font-size: 0.9rem;
+                color: #666;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+
+            .about-image img {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+                border-radius: 8px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Products Section */
+            .products-section {
+                padding: 5rem 0;
+                background-color: #f8f9fa;
+            }
+
+            .products-section h2 {
+                font-size: 3rem;
+                text-align: center;
+                color: #333;
+                margin-bottom: 1rem;
+                font-weight: bold;
+            }
+
+            .section-subtitle {
+                text-align: center;
+                font-size: 1.2rem;
+                color: #666;
+                margin-bottom: 3rem;
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .products-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+                margin-bottom: 3rem;
+            }
+
+            .product-card {
+                background: white;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+
+            .product-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            }
+
+            .product-image {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .product-image img {
+                width: 100%;
+                height: 280px;
+                object-fit: cover;
+                transition: transform 0.3s;
+            }
+
+            .product-card:hover .product-image img {
+                transform: scale(1.05);
+            }
+
+            .product-badge {
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+                background: #e74c3c;
+                color: white;
+                padding: 0.3rem 0.8rem;
+                border-radius: 15px;
+                font-size: 0.8rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            .product-badge[class*="OFERTA"] {
+                background: #f39c12;
+            }
+
+            .product-badge[class*="BESTSELLER"] {
+                background: #27ae60;
+            }
+
+            .product-info {
+                padding: 1.5rem;
+            }
+
+            .product-info h3 {
+                font-size: 1.3rem;
+                color: #333;
+                margin-bottom: 0.5rem;
+                font-weight: bold;
+            }
+
+            .product-info p {
+                color: #666;
+                font-size: 0.9rem;
+                margin-bottom: 1rem;
+                line-height: 1.5;
+            }
+
+            .product-price {
+                font-size: 1.4rem;
+                font-weight: bold;
+                color: #e74c3c;
+                margin-bottom: 1rem;
+            }
+
+            .price-old {
+                text-decoration: line-through;
+                color: #999;
+                font-size: 1rem;
+                margin-right: 0.5rem;
+            }
+
+            .price-current {
+                color: #e74c3c;
+            }
+
+            .product-technologies {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .tech-badge {
+                background: #ecf0f1;
+                color: #333;
+                padding: 0.2rem 0.6rem;
+                border-radius: 12px;
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+
+            .products-cta {
+                text-align: center;
+            }
+
+            /* Newsletter Section */
+            .newsletter-section {
+                background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+                color: white;
+                padding: 4rem 0;
+            }
+
+            .newsletter-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 3rem;
+            }
+
+            .newsletter-label {
+                color: #e74c3c;
+                font-size: 0.9rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .newsletter-text h2 {
+                font-size: 3rem;
+                font-weight: bold;
+                margin: 0.5rem 0;
+            }
+
+            .newsletter-text p {
+                color: #bdc3c7;
+                font-size: 1.1rem;
+            }
+
+            .newsletter-form {
+                display: flex;
+                gap: 0;
+                min-width: 400px;
+            }
+
+            .newsletter-input {
+                flex: 1;
+                padding: 1rem 1.5rem;
+                border: 2px solid transparent;
+                background: rgba(255, 255, 255, 0.1);
+                color: white;
+                font-size: 1rem;
+                outline: none;
+                transition: all 0.3s;
+            }
+
+            .newsletter-input::placeholder {
+                color: #bdc3c7;
+            }
+
+            .newsletter-input:focus {
+                border-color: #e74c3c;
+                background: rgba(255, 255, 255, 0.15);
+            }
+
+            .newsletter-button {
+                background: #e74c3c;
+                color: white;
+                border: none;
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background 0.3s;
+                text-transform: uppercase;
+            }
+
+            .newsletter-button:hover {
+                background: #c0392b;
+            }
+
+            /* Chat Widget */
+            .chat-widget {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: #25d366;
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 25px;
+                font-size: 0.9rem;
+                font-weight: bold;
+                cursor: pointer;
+                z-index: 1000;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                transition: transform 0.2s;
+            }
+
+            .chat-widget:hover {
+                transform: translateY(-2px);
+            }
+
+            .chat-widget::before {
+                content: "×";
+                position: absolute;
+                top: -5px;
+                right: 5px;
+                background: #e74c3c;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            /* Footer */
+            .footer {
+                background-color: #2c3e50;
+                color: white;
+                padding: 3rem 0 1rem;
+                margin-top: 0;
+            }
+
+            .footer-content {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .footer-section h4 {
+                color: white;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+            }
+
+            .footer-section ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .footer-section li {
+                margin-bottom: 0.5rem;
+            }
+
+            .footer-section a {
+                color: #bdc3c7;
+                text-decoration: none;
+                font-size: 0.9rem;
+                transition: color 0.2s;
+            }
+
+            .footer-section a:hover {
+                color: #e74c3c;
+            }
+
+            .footer-bottom {
+                border-top: 1px solid #34495e;
+                padding-top: 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .footer-disclaimer a {
+                color: #e74c3c;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .footer-copyright {
+                color: #95a5a6;
+                font-size: 0.9rem;
+            }
+
+            /* Responsive */
+            @media (max-width: 968px) {
+                .dropdown {
+                    min-width: 600px;
+                }
+
+                .dropdown-content {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                .dropdown-section:nth-child(3) {
+                    grid-column: span 2;
+                    border-right: none;
+                }
+
+                .hero-content {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .hero-left h1 {
+                    font-size: 3rem;
+                }
+
+                .banff-logo {
+                    font-size: 3rem;
+                }
+
+                .about-content {
+                    grid-template-columns: 1fr;
+                    text-align: center;
+                }
+
+                .about-stats {
+                    justify-content: center;
+                }
+
+                .newsletter-content {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .newsletter-form {
+                    min-width: auto;
+                    width: 100%;
+                }
+
+                .footer-content {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (max-width: 768px) {
+                .nav-menu {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+
+                .dropdown {
+                    position: static;
+                    min-width: auto;
+                    width: 100%;
+                    opacity: 1;
+                    visibility: visible;
+                    transform: none;
+                    box-shadow: none;
+                    background: #f8f9fa;
+                    border-radius: 0;
+                    margin-top: 0;
+                    padding: 1rem;
+                    display: none;
+                    border-top: 1px solid #ddd;
+                }
+
+                .nav-menu li:hover .dropdown {
+                    display: block;
+                }
+
+                .dropdown-content {
+                    grid-template-columns: 1fr;
+                }
+
+                .dropdown-section {
+                    border-right: none;
+                    padding-right: 0;
+                    margin-bottom: 1.5rem;
+                }
+
+                .dropdown-image {
+                    display: none;
+                }
+
+                .hero-left h1 {
+                    font-size: 2.5rem;
+                }
+
+                .hero-left h2 {
+                    font-size: 2rem;
+                }
+
+                .banff-logo {
+                    font-size: 2.5rem;
+                }
+
+                .nav-container {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+
+                .header-actions {
+                    order: -1;
+                }
+
+                .about-text h2 {
+                    font-size: 2.5rem;
+                }
+
+                .about-stats {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+
+                .products-section h2 {
+                    font-size: 2.5rem;
+                }
+
+                .products-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .newsletter-text h2 {
+                    font-size: 2.5rem;
+                }
+
+                .newsletter-form {
+                    flex-direction: column;
+                }
+
+                .newsletter-input,
+                .newsletter-button {
+                    width: 100%;
+                }
+
+                .footer-content {
+                    grid-template-columns: 1fr;
+                    text-align: center;
+                }
+
+                .footer-bottom {
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="nav-container">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                    </div>
+                    <span class="logo-text">ansilta</span>
+                </a>
+
+                <nav>
+                    <ul class="nav-menu">
+                        <li>
+                            <a href="#hombre">HOMBRE</a>
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <div class="dropdown-section">
+                                        <h4>CATEGORÍAS</h4>
+                                        <ul>
+                                            <li><a href="#">Anorak</a></li>
+                                            <li><a href="#">Bermudas</a></li>
+                                            <li><a href="#">Buzos</a></li>
+                                            <li><a href="#">Camisas</a></li>
+                                            <li><a href="#">Camperas</a></li>
+                                            <li><a href="#">Chalecos</a></li>
+                                            <li><a href="#">Interiores</a></li>
+                                            <li><a href="#">Pantalones</a></li>
+                                            <li><a href="#">Remeras</a></li>
+                                            <li><a href="#">Accesorios</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-section">
+                                        <h4>ACTIVIDADES</h4>
+                                        <ul>
+                                            <li><a href="#">Montañismo</a></li>
+                                            <li><a href="#">Trekking</a></li>
+                                            <li><a href="#">Ski / Snowboard</a></li>
+                                            <li><a href="#">Running</a></li>
+                                            <li><a href="#">Urbano</a></li>
+                                            <li><a href="#">Aventura</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-section">
+                                        <h4>TECNOLOGÍAS</h4>
+                                        <ul>
+                                            <li><a href="#">Windstopper®</a></li>
+                                            <li><a href="#">Polartec®</a></li>
+                                            <li><a href="#">Pertex®</a></li>
+                                            <li><a href="#">Primaloft®</a></li>
+                                            <li><a href="#">Allied Pluma</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="dropdown-image">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1544967882-d2b6cc7dc38c?w=300&h=200&fit=crop&auto=format"
+                                        alt="Niños Outdoor"
+                                    />
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#accesorios">ACCESORIOS</a></li>
+                        <li><a href="#capas">CAPAS</a></li>
+                        <li><a href="#oportunidades">OPORTUNIDADES</a></li>
+                        <li><a href="#institucional">INSTITUCIONAL</a></li>
+                        <li><a href="#blog">BLOG</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <!-- User Icon -->
+                    <svg class="header-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                        />
+                    </svg>
+
+                    <!-- Search Icon -->
+                    <svg class="header-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                        />
+                    </svg>
+
+                    <!-- Cart Icon -->
+                    <div class="cart-badge">
+                        <svg class="header-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1>ANSILTA</h1>
+                    <h2>PRESENTA</h2>
+                    <h3>EL BANFF MOUNTAIN FILM FESTIVAL WORLD TOUR</h3>
+                    <a href="#" class="cta-button">Ver Más Información</a>
+                </div>
+                <div class="hero-right">
+                    <div class="banff-logo">BANFF</div>
+                    <div class="mountain-festival">
+                        MOUNTAIN<br />
+                        FILM FESTIVAL<br />
+                        WORLD TOUR
+                    </div>
+                    <div class="hero-location">ARGENTINA</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Nosotros Section -->
+        <section class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Sobre Nosotros</h2>
+                        <h3>Cultura Ansilta</h3>
+                        <p>
+                            Desde 1985, Ansilta ha sido pionera en la creación de indumentaria técnica para montaña en Argentina. Nuestra
+                            pasión por las actividades outdoor nos impulsa a desarrollar productos de la más alta calidad, pensados para
+                            acompañarte en cada aventura.
+                        </p>
+                        <p>
+                            Con más de 35 años de experiencia, combinamos tecnologías de vanguardia con el conocimiento profundo del clima y
+                            las condiciones extremas de nuestras montañas. Cada prenda que creamos refleja nuestro compromiso con la
+                            excelencia y la innovación.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">35+</span>
+                                <span class="stat-label">Años de experiencia</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Productos desarrollados</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Puntos de venta</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop&auto=format"
+                            alt="Montañismo Ansilta"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productos Section -->
+        <section class="products-section">
+            <div class="container">
+                <h2>Nuestros Productos</h2>
+                <p class="section-subtitle">Descubre nuestra colección de indumentaria técnica para todas tus aventuras</p>
+
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5d?w=400&h=500&fit=crop&auto=format"
+                                alt="Campera Técnica"
+                            />
+                            <div class="product-badge">NUEVO</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Campera Técnica Mountain Pro</h3>
+                            <p>Campera técnica con tecnología Gore-Tex® para montañismo y expediciones</p>
+                            <div class="product-price">$89.999</div>
+                            <div class="product-technologies">
+                                <span class="tech-badge">Gore-Tex®</span>
+                                <span class="tech-badge">Recco®</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=500&fit=crop&auto=format"
+                                alt="Pantalón Trekking"
+                            />
+                        </div>
+                        <div class="product-info">
+                            <h3>Pantalón Trekking Explorer</h3>
+                            <p>Pantalón resistente y cómodo para trekking y senderismo</p>
+                            <div class="product-price">$45.999</div>
+                            <div class="product-technologies">
+                                <span class="tech-badge">Windstopper®</span>
+                                <span class="tech-badge">Pertex®</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=500&fit=crop&auto=format"
+                                alt="Chaleco Polar"
+                            />
+                            <div class="product-badge">OFERTA</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Chaleco Polar Thermo</h3>
+                            <p>Chaleco térmico con tecnología Polartec® para capas intermedias</p>
+                            <div class="product-price">
+                                <span class="price-old">$32.999</span>
+                                <span class="price-current">$25.999</span>
+                            </div>
+                            <div class="product-technologies">
+                                <span class="tech-badge">Polartec®</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1544967883-6ad8d6d1c7b4?w=400&h=500&fit=crop&auto=format"
+                                alt="Remera Técnica"
+                            />
+                        </div>
+                        <div class="product-info">
+                            <h3>Remera Técnica Performance</h3>
+                            <p>Remera de secado rápido para actividades de alta intensidad</p>
+                            <div class="product-price">$18.999</div>
+                            <div class="product-technologies">
+                                <span class="tech-badge">Dri-Fit</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=500&fit=crop&auto=format"
+                                alt="Buzo Técnico"
+                            />
+                        </div>
+                        <div class="product-info">
+                            <h3>Buzo Técnico Alpine</h3>
+                            <p>Buzo térmico para actividades en climas fríos</p>
+                            <div class="product-price">$56.999</div>
+                            <div class="product-technologies">
+                                <span class="tech-badge">Primaloft®</span>
+                                <span class="tech-badge">Pontetorto®</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5d?w=400&h=500&fit=crop&auto=format"
+                                alt="Anorak Expedition"
+                            />
+                            <div class="product-badge">BESTSELLER</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Anorak Expedition Elite</h3>
+                            <p>Anorak técnico para expediciones y montañismo extremo</p>
+                            <div class="product-price">$125.999</div>
+                            <div class="product-technologies">
+                                <span class="tech-badge">Gore-Tex®</span>
+                                <span class="tech-badge">Allied Pluma</span>
+                                <span class="tech-badge">Recco®</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-cta">
+                    <a href="#" class="cta-button">Ver Todos Los Productos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <span class="newsletter-label">NUESTRO NEWSLETTER</span>
+                        <h2>NEWSLETTER</h2>
+                        <p>Suscribete para recibir todas las novedades</p>
+                    </div>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Tu dirección de email..." class="newsletter-input" />
+                        <button class="newsletter-button">SUSCRIBIRME</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chat Widget -->
+        <div class="chat-widget">¡Chatea ahora mismo con un agente!</div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>TIENDA ANSILTA</h4>
+                        <ul>
+                            <li><a href="#">Cultura Ansilta</a></li>
+                            <li><a href="#">Historia</a></li>
+                            <li><a href="#">Nuestros Logros</a></li>
+                            <li><a href="#">Propósito</a></li>
+                            <li><a href="#">Puntos de venta</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>SERVICIO AL CLIENTE</h4>
+                        <ul>
+                            <li><a href="#">Botón de arrepentimiento</a></li>
+                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#">Reembolso y devoluciones</a></li>
+                            <li><a href="#">Políticas de privacidad</a></li>
+                            <li><a href="#">Políticas de envíos</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">Dónde está mi pedido?</a></li>
+                            <li><a href="#">Regístrate como cliente</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>CONECTATE!</h4>
+                        <ul>
+                            <li><a href="#">/ansiltaoficial/</a></li>
+                            <li><a href="#">/ansiltaoficial/</a></li>
+                            <li><a href="#">Canal YouTube</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>OTRAS SECCIONES</h4>
+                        <ul>
+                            <li><a href="#">¿Dónde está mi pedido?</a></li>
+                            <li><a href="#">Registro de prendas</a></li>
+                            <li><a href="#">Andes Donde Andes (Blog)</a></li>
+                            <li><a href="#">Formulario de contacto</a></li>
+                            <li><a href="#">Garantías y reclamos</a></li>
+                            <li><a href="#">Trabaja con nosotros</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-disclaimer">
+                        <p>
+                            Al navegar por este sitio acepta el uso de cookies para agilizar tu experiencia de compra.
+                            <a href="#">ENTENDIDO</a>
+                        </p>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>&copy; 2024 Ansilta. Todos los derechos reservados. | Réplica educativa para proyecto universitario</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            // Smooth scrolling para los enlaces del menú
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute("href"));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                });
+            });
+        </script>
+    </body>
 </html>
-
-
-
